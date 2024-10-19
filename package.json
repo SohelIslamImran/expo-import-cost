@@ -1,0 +1,69 @@
+{
+  "name": "expo-import-cost",
+  "displayName": "Expo Import Cost",
+  "description": "This extension will display inline in the editor the size of the imported package and file. The extension utilizes expo-atlas in order to detect the imported size",
+  "keywords": [
+    "expo",
+    "require",
+    "import",
+    "size",
+    "weight",
+    "vscode"
+  ],
+  "author": {
+    "name": "Sohel Islam Imran",
+    "email": "sohelislamimran@gmail.com",
+    "url": "https://github.com/sohelislamimran"
+  },
+  "homepage": "https://github.com/sohelislamimran/expo-import-cost",
+  "bugs": {
+    "url": "https://github.com/sohelislamimran/expo-import-cost/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sohelislamimran/expo-import-cost"
+  },
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.94.0"
+  },
+  "categories": [
+    "Visualization",
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onLanguage:typescriptreact",
+    "onLanguage:javascriptreact"
+  ],
+  "icon": "images/logo-marketplace.png",
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "title": "Toggle Expo Import Cost",
+        "command": "expo-import-cost.toggle"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.94.0",
+    "@types/mocha": "^10.0.8",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "eslint": "^9.11.1",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "expo-atlas": "^0.3.26"
+  }
+}
