@@ -24,6 +24,7 @@
     "url": "https://github.com/sohelislamimran/expo-import-cost"
   },
   "version": "0.0.1",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.94.0"
   },

@@ -12,8 +12,6 @@ Calculates the size of imports and requires. Supports both `Javascript` and `Typ
 
 ![Example Image](./images/example.png)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
 ## Requirements
 
 This extension require [Expo Atlas](https://docs.expo.dev/guides/analyzing-bundles/#using-atlas-with-npx-expo-start) to be enabled. Atlas is built into Expo starting from SDK 51, and enabled when defining the environment variable `EXPO_UNSTABLE_ATLAS=true`.
