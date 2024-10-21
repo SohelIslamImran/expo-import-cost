@@ -39,7 +39,7 @@
     "onLanguage:javascriptreact"
   ],
   "icon": "images/logo-marketplace.png",
-  "main": "./out/extension.js",
+  "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
@@ -49,10 +49,10 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile && npm run lint",
+    "vscode:prepublish": "bun run compile",
+    "compile": "bun build ./src/extension.ts --outfile=dist/extension.js --format=cjs --target=node --minify -e vscode",
+    "watch": "bun run compile --watch",
+    "pretest": "tsc --noEmit -p ./ && bun run lint && bun run compile",
     "lint": "eslint src"
   },
   "devDependencies": {

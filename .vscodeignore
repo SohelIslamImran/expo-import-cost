@@ -1,8 +1,14 @@
 .vscode/**
 .vscode-test/**
 src/**
+node_modules/**
 .gitignore
 .yarnrc
+bun.lockb
+CHANGELOG.md
+README.md
+**/images/example.png
+**/package.json
 vsc-extension-quickstart.md
 **/tsconfig.json
 **/eslint.config.mjs
