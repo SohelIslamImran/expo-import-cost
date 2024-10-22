@@ -2,9 +2,13 @@
 
 This extension will display inline in the editor the size of the imported package and file. The extension utilizes [expo-atlas](https://github.com/expo/atlas) in order to detect the imported size
 
-Install from [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=sohelislamimran.expo-import-cost)
-
 This extension is based on [expo-atlas](https://github.com/expo/atlas) and inspired by [wix's import cost extension](https://github.com/wix/import-cost/tree/master/packages/vscode-import-cost).
+
+## Installation
+
+1. Go to the [Releases](https://github.com/SohelIslamImran/expo-import-cost/releases) and download the [`expo-import-cost.vsix`](https://github.com/SohelIslamImran/expo-import-cost/releases/download/v0.0.1/expo-import-cost-0.0.1.vsix) file from Assets
+
+2. Then go to VSCode > Extensions tab, click on the three dots and click on "install from VSIX..." and then select the downloaded `expo-import-cost.vsix` file.
 
 ## Features
 
