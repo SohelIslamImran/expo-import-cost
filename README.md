@@ -1,5 +1,8 @@
 # Expo Import Cost VSCode Extension
 
+> [!Warning]
+> This extension is unstable and might not work for your project.
+
 This extension will display inline in the editor the size of the imported package and file. The extension utilizes [expo-atlas](https://github.com/expo/atlas) in order to detect the imported size
 
 This extension is based on [expo-atlas](https://github.com/expo/atlas) and inspired by [wix's import cost extension](https://github.com/wix/import-cost/tree/master/packages/vscode-import-cost).
